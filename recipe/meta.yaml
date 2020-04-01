@@ -1,5 +1,5 @@
 {% set name = "dials-data" %}
-{% set version = "2.0.71" %}
+{% set version = "2.0.72" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/dials_data/dials_data-{{ version }}.tar.gz
-  sha256: f8684ee72fd058c187c422982320920542425ac889a6acc0cf55a997f55f579e
+  sha256: 818ab166e34fed72c2dbde15acff54935d0356e97ae804d5aa80a0de5895a3c4
 
 build:
   number: 0
