@@ -5,7 +5,7 @@ Home: https://github.com/dials/data
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: DIALS Regression Data Manager
 
