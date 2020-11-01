@@ -10,7 +10,7 @@ source:
   sha256: 8e92d9eccdc5d49562cc64f68d0fe64b90cf8c6267623ce1e89561f69b01fc64
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - dials.data = dials_data.cli:main
@@ -19,11 +19,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - importlib_resources
+    - py
     - pytest
-    - python
+    - python >=3.6
     - pyyaml
 
 test:

@@ -5,9 +5,13 @@ Home: https://github.com/dials/data
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dials-data-feedstock/blob/master/LICENSE.txt)
 
 Summary: DIALS Regression Data Manager
+
+Development: https://github.com/dials/data
+
+Documentation: https://dials-data.readthedocs.io/
 
 A python package providing data files used for regression tests in
 scientific software processing crystallographic data, such as DIALS,
