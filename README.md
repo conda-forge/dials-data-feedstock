@@ -1,7 +1,7 @@
 About dials-data
 ================
 
-Home: https://github.com/dials/data
+Home: https://pypi.org/project/dials-data
 
 Package license: BSD-3-Clause
 
