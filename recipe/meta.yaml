@@ -1,13 +1,12 @@
-{% set name = "dials-data" %}
-{% set version = "2.2.25" %}
+{% set version = "2.3.3" %}
 
 package:
-  name: {{ name|lower }}
+  name: dials-data
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/dials_data/dials_data-{{ version }}.tar.gz
-  sha256: 92cf0cb846a91b4b95fc5ba041836a645241c2be5d0c5a323b721a2ff56f6210
+  url: https://pypi.io/packages/source/d/dials_data/dials_data-{{ version }}.tar.gz
+  sha256: add8888dd8fdba7765ee20a4fb32a39fbd7743abb617436872a73321456ecabb
 
 build:
   number: 0
@@ -19,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - importlib_resources
     - py
     - pytest
-    - python >=3.6
+    - python >=3.7
     - pyyaml
 
 test:
