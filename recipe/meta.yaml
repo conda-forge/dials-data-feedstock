@@ -1,4 +1,4 @@
-{% set version = "2.3.29" %}
+{% set version = "2.4.0" %}
 
 package:
   name: dials-data
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dials_data/dials_data-{{ version }}.tar.gz
-  sha256: 0c62c4a6344341c05c14fd38e110384b10e1886bb84aff7591108fbedf15235e
+  sha256: 92da7e4c5ba32efdfcb45cbca437848d730f0a63cd6b52ddb241dfb650188592
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - pytest
     - python >=3.7
     - pyyaml
+    - requests
 
 test:
   imports:
@@ -52,6 +53,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - rjgildea
-    - ndevenish
     - anthchirp
+    - ndevenish
+    - rjgildea
