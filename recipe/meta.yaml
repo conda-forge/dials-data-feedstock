@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/dials_data/dials_data-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/dials_data/dials_data-{{ version }}.tar.gz
   sha256: 0601c1a0725a82878997b86cd32d213b74c6bf5a8daa9c264132d074eda17226
 
 build:
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
     - setuptools
   run:
-    - importlib_resources <6.2
+    - importlib_resources =6.3
     - py
     - pytest
     - python >=3.7
