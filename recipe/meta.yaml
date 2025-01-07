@@ -9,7 +9,7 @@ source:
   sha256: 85845b808952facc97e9e90e84fcc84ed87d04127ea489602a6680b7dec92239
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - dials.data = dials_data.cli:main
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - importlib_resources =6.3
     - py
     - pytest
-    - python >=3.7
+    - python >={{ python_min }}
     - pyyaml
     - requests
 
@@ -37,6 +37,7 @@ test:
     - dials.data list
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/dials-data
